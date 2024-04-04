@@ -7,7 +7,8 @@ type Props = {
 }
 
 const Switch = (props: Props) => {
-    const align = props.theme === Theme.Theme1 ? 'start' : props.theme === Theme.Theme2 ? 'center' : 'end'
+    const align: 'start' | 'end' | 'center' =
+        props.theme === Theme.Theme1 ? 'start' : props.theme === Theme.Theme2 ? 'center' : 'end'
     return (
         <div className={'switch-wrapper'}>
             <h1
